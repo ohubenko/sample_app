@@ -36,6 +36,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'guard',                    '2.15.0'
   gem 'guard-minitest',           '2.4.6'
